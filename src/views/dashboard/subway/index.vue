@@ -1,5 +1,7 @@
 <template>
-  <div id="subway"></div>
+  <div id="mysubway">
+    <iframe id="iframe-subway" src="http://127.0.0.1:5500/TJ-subway.html" frameborder="0" />
+  </div>
 </template>
 
 <script>
@@ -8,10 +10,9 @@
     setup() {},
   });
 </script>
-
 <style lang="less" scoped>
-  #mysubway {
-    width: 400px;
-    height: 300px;
+  #iframe-subway {
+    width: 100%;
+    height: calc(100vh - 200px);
   }
 </style>
