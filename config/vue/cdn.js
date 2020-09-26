@@ -17,6 +17,7 @@ const CDN = {
     '//cdn.bootcdn.net/ajax/libs/vue-i18n/8.18.1/vue-i18n.min.js',
     // '//cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js',
     // '//cdn.bootcss.com/Mock.js/1.0.1-beta3/mock-min.js',
+    '//webapi.amap.com/subway?v=1.0&amp;key=7730e22da228195eecbbd0bf03c5b6bb&amp;callback=cbk',
   ],
 };
 function configCdn(config) {
@@ -24,6 +25,7 @@ function configCdn(config) {
   config.when(isProductionFn() && (ENV.VUE_APP_USE_CDN === 'TRUE' || isSiteModeFn()), (config) => {
     // 百度统计代码
     const HM = `<script>
+                  return;
                   var _hmt = _hmt || [];
                   (function() {
                     var hm = document.createElement("script");

@@ -1,13 +1,13 @@
 import { NormMenuItem } from '@/router/types';
 
-export const orderNo = 10;
+export const orderNo = 20;
 export default {
-  name: 'Dashboard',
+  name: '健康管理',
   path: '/dashboard',
   children: [
     {
       path: '/welcome',
-      name: '欢迎页',
+      name: '1-1',
     },
   ],
 } as NormMenuItem;

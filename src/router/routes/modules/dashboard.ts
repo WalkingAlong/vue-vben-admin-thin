@@ -27,6 +27,14 @@ const routes: RouteConfigEx[] = [
       affix: true,
     },
   },
+  {
+    path: '/subway',
+    name: 'Subway',
+    component: () => createAsyncComponent(import('@/views/dashboard/subway/index.vue')),
+    meta: {
+      title: '地铁图',
+    },
+  },
 ];
 
 export default {

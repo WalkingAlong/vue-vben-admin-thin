@@ -30,5 +30,6 @@ interface WheelEvent {
 
 declare function parseInt(s: string | number, radix?: number): number;
 declare function parseFloat(string: string | number): number;
+declare function subway(s: string, o: object): any;
 
 declare type Dictionary<T> = Record<string, T>;

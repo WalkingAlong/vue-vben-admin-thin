@@ -12,6 +12,11 @@ module.exports = {
     '@vue/typescript/recommended',
   ],
 
+  globals: {
+    process: true,
+    subway: true,
+  },
+
   parserOptions: {
     ecmaVersion: 2020,
   },
@@ -23,18 +28,6 @@ module.exports = {
     'vue/no-side-effects-in-computed-properties': 'off',
     'vue/attribute-hyphenation': 'off',
     'no-useless-constructor': 'off',
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'always',
-          normal: 'always',
-          component: 'always',
-        },
-        svg: 'always',
-        math: 'always',
-      },
-    ],
     'prefer-const': [
       'error',
       {

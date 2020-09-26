@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- 只在开启cdn的时候插入百度统计 -->
-    <%= htmlWebpackPlugin.options.hm %>
+    <!-- <%= htmlWebpackPlugin.options.hm %> -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
@@ -12,7 +12,7 @@
     />
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,shrink-to-fit=no"
     />
     <link rel="icon" href="./favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
@@ -20,6 +20,10 @@
     htmlWebpackPlugin.options.cdn.css) { %>
     <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" />
     <% } %>
+    <script
+      type="text/javascript"
+      src="https://webapi.amap.com/subway?v=1.0&amp;key=7730e22da228195eecbbd0bf03c5b6bb&amp;callback=cbk"
+    ></script>
   </head>
   <body>
     <div id="app">
